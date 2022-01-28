@@ -48,8 +48,6 @@ $catalog__categories_open.on('click', function(evt) {
   evt.preventDefault();
 
   $catalog__categories_open.toggleClass('open');
-  console.log('catalog__categories_height: ' + catalog__categories_height)
-  console.log('$catalog__categories.height(): ' + $catalog__categories.height())
   if($catalog__categories.height() !== catalog__categories_height) {
     $catalog__categories.height(catalog__categories_height);
   } else {

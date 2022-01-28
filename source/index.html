@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;700&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <title>Document</title>
+</head>
+<body>
+  <header class="header" id="main-header">
+    <div class="header__container container d-flex align-items-center justify-content-between">
+      <a class="header__logo" href="index.html">
+        <img src="img/logo.svg" alt="Лого" width="110" height="54">
+      </a>
+
+      <button class="header__open_menu d-flex align-items-center justify-content-center"><img src="img/icons/hamburger_btn.svg" width="43" height="30"></button>
+
+      <div class="header__main_nav_row d-flex flex-wrap align-content-start">
+        <button class="header__close_menu"><img src="img/icons/cross.svg" width="44" height="44"></button>
+
+        <a class="header__login text text_small">Войти</a>
+
+        <nav class="main_nav d-flex">
+          <div class="main_nav__wrapper">
+            <ul class="main_nav__list d-flex flex-column">
+              <li class="main_nav__item">
+                <a class="main_nav__link text" href="index.html">Главная</a>
+              </li>
+              <li class="main_nav__item">
+                <a class="main_nav__link text" href="catalog.html">Каталог</a>
+              </li>
+              <li class="main_nav__item">
+                <a class="main_nav__link text" href="promotions.html">Акции</a>
+              </li>
+              <li class="main_nav__item">
+                <a class="main_nav__link text" href="services.html">Услуги</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="main_nav__wrapper">
+            <ul class="main_nav__list d-flex flex-column">
+              <li class="main_nav__item">
+                <a class="main_nav__link text" href="about.html">О компании</a>
+              </li>
+              <li class="main_nav__item">
+                <a class="main_nav__link text" href="blog.html">Блог</a>
+              </li>
+              <li class="main_nav__item">
+                <a class="main_nav__link text" href="delivery.html">Доставка и оплата</a>
+              </li>
+              <li class="main_nav__item">
+                <a class="main_nav__link text" href="contacts.html">Контакты</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="main_nav__wrapper">
+            <ul class="main_nav__social d-flex flex-column">
+              <li class="main_nav__social_item">
+                <a class="main_nav__social_link text text_small" href="about.html">Instagram</a>
+              </li>
+              <li class="main_nav__social_item">
+                <a class="main_nav__social_link text text_small" href="blog.html">Facebook</a>
+              </li>
+              <li class="main_nav__social_item">
+                <a class="main_nav__social_link text text_small" href="delivery.html">Вконтакте</a>
+              </li>
+            </ul>
+
+            <div class="main_nav__contacts d-flex flex-column">
+              <a class="text text_small" href="mailto:sale@aquavisa.ru">sale@aquavisa.ru</a>
+              <a class="text text_small" href="tel:+78124000040">+7 (812) 40-000-40</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="banner container">
+      <p class="banner__caption h1">Совершенство<br> в каждом бассейне</p>
+      <p class="banner__text text">Поставляем оборудование для бассейнов, работаем с лучшими производителями</p>
+      <a class="banner__button button" href="catalog.html">Заказать чашу</a>
+
+      <img class="banner__image d-none d-md-block" src="img/banner_bg.png" width="1426" height="1199">
+      <img class="banner__image d-block d-md-none" src="img/banner_bg_mobile.svg" width="778" height="1090">
+    </div>
+
+    <div class="suggestions">
+      <h2 class="suggestions__title h2">Предложения для&nbsp;вас</h2>
+      <div class="suggestions__list d-flex draggable">
+        <div class="suggestions__item card_wrapper d-flex align-items-center justify-content-center">
+          <img class="suggestions__image" src="img/icons/pool.svg">
+          <p class="suggestions__text text">Бассейны</p>
+        </div>
+        <div class="suggestions__item card_wrapper d-flex align-items-center justify-content-center">
+          <img class="suggestions__image" src="img/icons/goods.svg">
+          <p class="suggestions__text text">Товары для бассейна</p>
+        </div>
+        <div class="suggestions__item card_wrapper d-flex align-items-center justify-content-center">
+          <img class="suggestions__image" src="img/icons/pool_cover.svg">
+          <p class="suggestions__text text">Укрытие бассейна</p>
+        </div>
+        <div class="suggestions__item card_wrapper d-flex align-items-center justify-content-center">
+          <img class="suggestions__image" src="img/icons/pool_cover.svg">
+          <p class="suggestions__text text">Укрытие бассейна</p>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="about_block">
+      <h2 class="about_block__title h2">Немного о нас</h2>
+
+      <div class="about_block__wrapper d-flex"> 
+        <div class="col-12 col-md-5">
+          <img class="about_block__number" src="img/icons/01.svg" alt="01">
+        </div>
+
+        <div class="col-12 col-md-7">
+          <p class="about_block__text text_small">
+            Компания AquaVisa занимается поставкой 
+            оборудования для бассейнов, снабжением, 
+            оптовой продажей строительных материалов и 
+            специального оснащения для бассейнов, бань, 
+            хаммамов и спа-комплексов по всей России и СНГ. 
+            Мы предоставляем широкий ассортимент ведущих 
+            поставщиков и комплексные услуги профессиональных 
+            консультантов.
+          </p>
+
+          <div class="about_block__images d-flex draggable">
+            <div class="about_block__image">
+              <img src="img/about_block_img1.png">
+            </div>
+            <div class="about_block__image">
+              <img src="img/about_block_img2.png">
+            </div>
+            <div class="about_block__image">
+              <img src="img/about_block_img3.png">
+            </div>
+            <div class="about_block__image">
+              <img src="img/about_block_img1.png">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about_block__wrapper d-flex"> 
+        <div class="col-12 col-md-5">
+          <img class="about_block__number" src="img/icons/02.svg" alt="02">
+        </div>
+        <div class="col-12 col-md-7">
+          <ul class="about_block__list d-flex flex-wrap justify-content-between">
+            <li class="about_block__item">
+              <div class="about_block__img_wrapper">
+                <img src="img/icons/star.svg">
+              </div>
+              <p class="about_block__item_caption text">Комплексный подход</p>
+              <p class="about_block__item_text text_small">
+                Доставка оборудования и химии, техническое сопровождение, 
+                сервисное обслуживание бассейнов и оборудования для них, 
+                консультационные услуги (строительство бассейнов; подбор 
+                оборудования; эксплуатация).
+              </p>
+            </li>
+            <li class="about_block__item">
+              <div class="about_block__img_wrapper">
+                <img src="img/icons/like.svg">
+              </div>
+              <p class="about_block__item_caption text">Высокий профессионализм</p>
+              <p class="about_block__item_text text_small">
+                Наш опыт и знания позволяют оценивать все аспекты 
+                и особенности каждого объекта, принимать оптимальные 
+                решения по подбору и доставке материалов, исходя из его 
+                масштабов и функциональных особенностей.
+              </p>
+            </li>
+            <li class="about_block__item">
+              <div class="about_block__img_wrapper">
+                <img src="img/icons/scales.svg">
+              </div>
+              <p class="about_block__item_caption text">Отличное соотношение цены и качества</p>
+              <p class="about_block__item_text text_small">
+                Мы прекрасно ориентируемся 
+                в рынке и готовы предоставлять скидки как 
+                физическим лицам, так и оптовым покупателям.
+              </p>
+            </li>
+            <li class="about_block__item">
+              <div class="about_block__img_wrapper">
+                <img src="img/icons/lightning.svg">
+              </div>
+              <p class="about_block__item_caption text">Широкий ассортимент</p>
+              <p class="about_block__item_text text_small">
+                Мы работаем со всемирно известными производителями оборудования для бассейнов.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="contacts_block">
+      <h2 class="contacts_block__title h2">Остались вопросы?</h2>
+
+      <form class="contacts_block__form">
+        <fieldset class="contacts_block__fieldset">
+          <legend class="contacts_block__legend">Получите помощь специалиста</legend>
+
+          <label class="contacts_block__label">
+            <span class="visually_hidden">Ваше имя</span>
+            <input class="contacts_block__input text" name="callback-name" placeholder="Ваше имя">
+          </label>
+          <label class="contacts_block__label">
+            <span class="visually_hidden">Телефон</span>
+            <input class="contacts_block__input text" name="callback-phone" placeholder="Телефон">
+          </label>
+        </fieldset>
+
+        <p class="contacts_block__note text_tiny_subdued">
+          Нажимая на кнопку «Отправить заявку», Вы соглашаетесь 
+          с условиями на передачу персональных данных
+        </p>
+        <button class="contacts_block__submit button" type="submit">Отправить заявку</button>
+      </form>
+
+      <div class="contacts_block__wrapper d-flex align-items-center">
+        <div class="col-12 col-md-6">
+          <img class="contacts_block__map" src="img/map.png">
+        </div>
+        <div class="col-12 col-md-6 d-flex flex-column">
+          <p class="text">Санкт-Петербург, Витебский&nbsp;пр.,&nbsp;д.&nbsp;17</p>
+          <a class="text" href="mailto:sale@aquavisa.ru">sale@aquavisa.ru</a>
+          <a class="text" href="tel:+78124000040">+7 (812) 40-000-40</a>
+          <a class="to_start text text_small_heavy d-none d-md-block" href="#main-header">наверх</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer d-flex">
+    <p class="footer__copyright text text_small">2021 © AquaVisa</p>
+    <a class="footer__link text text_small" href="">Договор оферты</a>
+    <a class="footer__link text text_small" href="">Политика конфиденциальности</a>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js" integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+</body>
+</html>

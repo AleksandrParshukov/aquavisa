@@ -1,0 +1,36 @@
+.footer {
+  padding: 140px @padding-desktop 100px;
+
+  &__copyright {
+    color: @text-footer;
+    letter-spacing: 0.07em;
+    margin-right: auto;
+  }
+
+  &__link {
+    color: @text-footer;
+    letter-spacing: 0.07em;
+    margin-left: 250px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer {
+    padding: 130px @padding-mobile 100px;
+    flex-direction: column;
+    align-items: center;
+  
+    &__copyright {
+      margin: 40px 0 0;
+      order: 3;
+    }
+  
+    &__link {
+      margin: 0 0 15px;
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,71 @@
+.catalog {
+  padding: 220px 2*@padding-desktop 0 @padding-desktop;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 888.38px;
+    height: 888.38px;
+    background: transparent url(../img/catalog_bg.svg) no-repeat center;
+    display: block;
+    position: absolute;
+    top: -94px;
+    right: -46px;
+    transform: rotate(55.26deg);
+  }
+
+  &__title {
+    margin-bottom: 15px;
+  }
+
+  &__categories_wrapper {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .catalog {
+    padding: 145px @padding-mobile 0;
+    position: relative;
+  
+    &::after {
+      content: "";
+      width: 423.88px;
+      height: 423.88px;
+      background-size: contain;
+      top: -50px;
+      right: 50%;
+      transform: translateX(60%) rotate(43.02deg);
+    }
+  
+    &__title {
+      margin-bottom: 10px;
+    }
+
+    &__categories_open {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 16px;
+      width: 100%;
+      max-width: 290px;
+      padding: 12px 21px;
+
+      &::after {
+        content: "";
+        width: 20px;
+        height: 11px;
+        background: transparent url(../img/icons/chevron.svg) no-repeat center;
+        transition: transform 0.3s ease;
+      }
+      
+      &.open::after {
+        transform: rotate(180deg);
+      }
+    }
+
+    &__categories {
+      height: 0;
+      overflow: hidden;
+    }
+  }
+}

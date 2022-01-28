@@ -1,0 +1,131 @@
+.header {
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+
+  &__container {
+    width: 100%;
+    padding: 25px 50px;
+    position: relative;
+  }
+
+  &__logo {
+    width: 110px;
+    height: 54px;
+
+    >img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__open_menu {
+    width: 74px;
+    height: 74px;
+    background: linear-gradient(180deg, #1D1D1D 0%, rgba(29, 29, 29, 0) 100%);
+    filter: drop-shadow(6px 6px 25px rgba(0, 0, 0, 0.37));
+    border-radius: 50%;
+
+    >img {
+      width: 43px;
+      height: 30px;
+    }
+  }
+
+  &__main_nav_row {
+    padding: 88px 203px;
+    background-color: @black;
+    position: fixed;
+    inset: 0;
+    transform: translateY(-100%);
+    transition: transform 0.4s ease;
+    z-index: 500;
+
+    &.open {
+      transform: translateY(0);
+    }
+  }
+
+  &__close_menu {
+    position: absolute;
+    top: 73px;
+    right: 203px;
+
+    >img {
+      width: 44px;
+      height: 44px;
+    }
+  }
+
+  &__login {
+    padding-left: 65px;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 42px;
+      height: 43.5px;
+      background: url(../img/icons/person.svg) no-repeat center;
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    &__container {
+      width: 100%;
+      padding: 15px;
+    }
+
+    &__logo {
+      width: 98px;
+      height: 48px;
+    }
+  
+  
+    &__open_menu {
+      width: 48px;
+      height: 48px;
+
+      >img {
+        width: 27.89px;
+        height: 19.46px;
+      }
+    }
+  
+    &__main_nav_row {
+      padding: 50px 0 0 70px;
+      overflow-y: auto;
+    }
+  
+    &__close_menu {
+      position: absolute;
+      top: 30px;
+      right: 15px;
+
+      >img {
+        width: 36px;
+        height: 36px;
+      }
+    }
+  
+    &__login {
+      padding-left: 0;
+  
+      &::before {
+        width: 37.69px;
+        height: 39.04px;
+        background-size: contain;
+        left: -16px;
+        transform: translateX(-100%);
+      }
+    }
+  }
+}

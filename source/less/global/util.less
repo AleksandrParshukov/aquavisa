@@ -1,0 +1,253 @@
+@border-width: 2px;
+
+.visually_hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.button {
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 47px;
+  color: @text-white;
+  text-decoration: none;
+  background-color: @black;
+  background-image: none;
+  box-sizing: border-box;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: -2*@border-width;
+    border-radius: inherit;
+    background: @dark-blue linear-gradient(to right, @dark-blue 0%, @light-blue 100%);
+    z-index: -1;
+  }
+
+  &:hover {
+    color: inherit;
+    background: @dark-blue;
+
+    &::before {
+      background: @dark-blue;
+    }
+  }
+
+  &:active,
+  &.active {
+    background: linear-gradient(180deg, @dark-blue 0%, #3A6FFF 100%);
+
+    &::before {
+      background: linear-gradient(180deg, @dark-blue 0%, #3A6FFF 100%);
+    }
+  }
+
+  &:disabled {
+    background: @dark-gray;
+    border: 2px solid @dark-gray;
+  }
+}
+
+.card_wrapper {
+  background: @card-black;
+  backdrop-filter: blur(500px);
+  border-radius: 50px;
+}
+
+.h1 {
+  font-family: "Exo", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80px;
+  line-height: 116px;
+  color: @text-white;
+}
+
+.h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 60px;
+  line-height: 93px;
+  color: @text-white;
+}
+
+.h3 {
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 47px;
+  color: @text-white;
+}
+
+.h4 {
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 47px;
+  color: @text-white;
+}
+
+.text {
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 43px;
+  color: @text-white;
+  text-decoration: none;
+}
+
+.text_heavy {
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 43px;
+}
+
+.text_small {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.text_small_heavy {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.text_small_subdued {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 31px;
+  color: @text-subdued;
+}
+
+.text_tiny {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 31px;
+}
+
+.text_tiny_heavy {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 31px;
+}
+
+.text_tiny_subdued {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 23px;
+  color: @text-subdued;
+}
+
+.link {
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 47px;
+  text-decoration: underline;
+  background: linear-gradient(180deg, @dark-blue 0%, @light-blue 100%);
+  background-clip: text;
+}
+
+.link_heavy {
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 47px;
+  text-decoration: underline;
+  background: linear-gradient(180deg, @dark-blue 0%, @light-blue 100%);
+  background-clip: text;
+}
+
+.link_small {
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 31px;
+  text-decoration: underline;
+  background: linear-gradient(180deg, @dark-blue 0%, @light-blue 100%);
+  background-clip: text;
+}
+
+@media (max-width: 767px) {
+  .h1 {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 45px;
+  }
+  
+  .h2 {
+    font-size: 30px;
+    line-height: 34px;
+  }
+  
+  .text {
+    font-size: 20px;
+    line-height: 23px;
+  }
+  
+  .text_small {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  
+  .text_small_subdued {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 31px;
+    color: @text-subdued;
+  }
+  
+  .text_tiny {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  
+  .text_tiny_heavy {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  
+  .text_tiny_subdued {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  
+  .button {
+    font-size: 18px;
+    line-height: 21px;
+
+    &::before {
+      inset: -1*@border-width;
+    }
+  }
+  
+  .card_wrapper {
+    backdrop-filter: blur(225.837px);
+    border-radius: 22.5837px;
+  }
+}

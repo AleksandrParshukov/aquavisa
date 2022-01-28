@@ -1,0 +1,46 @@
+.breadcrumb {
+  align-items: center;
+
+  &__item {
+    color: @text-breadcrumb;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+
+    &::after {
+      content: "";
+      width: 17px;
+      height: 30px;
+      background: transparent url(../img/icons/breadcrumb.svg) no-repeat center;
+      display: block;
+      margin-left: 10px;
+    }
+
+    &:last-child {
+      color: @text-white;
+      margin: 0;
+
+      &::after {
+        content: none;
+      }
+    }
+  }
+
+  &__link {
+    color: inherit;
+  }
+}
+
+@media (max-width: 767px) {
+  .breadcrumb {
+    &__item {
+      margin-right: 7px;
+  
+      &::after {
+        width: 10px;
+        height: 18px;
+        margin-left: 7px;
+      }
+    }
+  }
+}

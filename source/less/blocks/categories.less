@@ -1,0 +1,42 @@
+.categories {
+  flex-wrap: wrap;
+  gap: 22px;
+
+  &__item {
+    min-width: 240px;
+    flex-grow: 1;
+  }
+
+  &__btn {
+    padding: 21px 40px;
+    flex-grow: 1;
+  }
+}
+
+@media (max-width: 767px) {
+  .categories {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 0;
+  
+    &__item {
+      min-width: 0;
+      flex-grow: 0;
+    }
+  
+    &__btn {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 16px;
+      padding: 0;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 0;
+      flex-grow: 0;
+
+      &::before {
+        content: none;
+      }
+    }
+  }
+}

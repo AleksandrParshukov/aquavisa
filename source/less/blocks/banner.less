@@ -1,0 +1,61 @@
+.banner {
+  padding: 327px 65px;
+  position: relative;
+
+  &__caption {
+    letter-spacing: 0.01em;
+    max-width: 784px;
+    margin: 0 0 35px;
+  }
+
+  &__text {
+    letter-spacing: 0.01em;
+    max-width: 728px;
+    margin-bottom: 55px;
+  }
+
+  &__button {
+    width: 451px;
+    height: 88px;
+    background: @dark-blue linear-gradient(94.29deg, @dark-blue 26.91%, @light-blue 106.34%);
+    z-index: 1;
+
+    &::before {
+      background: @dark-blue linear-gradient(94.29deg, @dark-blue 26.91%, @light-blue 106.34%);
+    }
+  }
+
+  &__image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
+}
+
+@media (max-width: 767px) {
+  .banner {
+    padding: 200px @padding-mobile 270px;
+    background: none;
+  
+    &__caption {
+      letter-spacing: 0.01em;
+      max-width: 290px;
+      margin: 0 0 5px;
+    }
+  
+    &__text {
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0.01em;
+      max-width: 290px;
+      margin-bottom: 40px;
+    }
+  
+    &__button {
+      width: 100%;
+      max-width: 290px;
+      height: 55px;
+    }
+  }
+}

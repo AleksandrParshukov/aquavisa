@@ -1,0 +1,565 @@
+.condition {
+  --margin-left: 70px;
+
+  &__top_list {
+    margin-block: 175px 210px;
+  }
+
+  &__top_item {
+    width: 445px;
+    margin-right: 175px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    >p {
+      min-height: 56px;
+      margin-top: 48px;
+    }
+  }
+
+  &__top_image {
+    margin-bottom: auto;
+
+    &--to_cart {
+      width: 265px;
+      height: 129.17px;
+    }
+
+    &--check {
+      width: 320.92px;
+      height: 168.34px;
+    }
+    
+    &--make {
+      width: 402.94px;
+      height: 159.94px;
+    }
+
+    >img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__top_text {
+    max-width: 1090px;
+
+    &:first-child {
+      margin-top: 97px;
+    }
+
+    &:last-child {
+      margin-bottom: 97px;
+    }
+
+    & + .condition__top_text {
+      margin-top: 30px;
+    }
+  }
+
+  &__list {
+    width: 100%;
+  }
+
+  &__item {
+    width: 589px;
+    padding: 80px 30px 62px;
+  }
+
+  &__caption {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-start;
+
+    &::before {
+      content: "";
+      width: 49px;
+      height: 7px;
+      background: transparent url(../img/icons/delivery_caption_wave.svg) no-repeat center;
+      background-size: contain;
+      margin: 0.5em 21px 0 0;
+      flex-shrink: 0;
+    }
+  }
+
+  &__text {
+    margin: 0 0 20px var(--margin-left);
+
+    &--heavy {
+      margin-bottom: 15px;
+    }
+
+    & + .condition__caption {
+      margin-top: 46px;
+    }
+  }
+
+  &__image {
+    margin: 130px 0 0 50%;
+    transform: translateX(-50%);
+
+    &--congrats {
+      width: 544.53px;
+      height: 159.6px;
+    }
+
+    &--map {
+      width: 503px;
+      height: 414px;
+      margin-top: 80px;
+    }
+
+    &--refund {
+      width: 269px;
+      height: 269px;
+    }
+  }
+
+  &__inner_list {
+    margin: 0 0 20px var(--margin-left);
+
+    &--wave {
+      padding-left: 20px;
+      position: relative;
+
+      &::before {
+        content: "";
+        width: 8px;
+        height: 100%;
+        background: transparent url(../img/icons/delivery_wave.png) no-repeat center;
+        background-size: 100% 100%;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      .condition__inner_item {
+        margin-bottom: 10px;
+
+        &::before {
+          content: none;
+        }
+      }
+    }
+  }
+
+  &__inner_item {
+    margin-bottom: 20px;
+    position: relative;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &::before {
+      content: "";
+      width: 9px;
+      height: 9px;
+      background: linear-gradient(180deg, @dark-blue 0%, @light-blue 100%);
+      border-radius: 50%;
+      display: block;
+      position: absolute;
+      top: 0.25em;
+      left: -32px;
+    } 
+
+    > .condition__text {
+      margin-left: 0;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__companies {
+    margin: 0 0 0 var(--margin-left);
+  }
+
+  &__company {
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &--delovyelinii {
+      width: 254.24px;
+      height: 38.63px;
+    }
+
+    &--pek {
+      width: 156px;
+      height: 17px;
+    }
+    
+    &--gtd {
+      width: 114px;
+      height: 42px;
+    }
+    
+    &--cdek {
+      width: 105px;
+      height: 45px;
+    }
+    
+    &--zhde {
+      width: 79px;
+      height: 76px;
+    }
+
+    >img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+}
+
+
+@media (max-width: 1400px) {
+  .condition {
+    --margin-left: 50px;
+  
+    &__top_list {
+      margin-block: 123px 147px;
+    }
+  
+    &__top_item {
+      width: 307px;
+  
+      >p {
+        min-height: 42px;
+        margin-top: 38px;
+      }
+    }
+  
+    &__top_image {
+      &--to_cart {
+        width: 188.57px;
+        height: 91.92px;
+      }
+  
+      &--check {
+        width: 228.37px;
+        height: 119.79px;
+      }
+      
+      &--make {
+        width: 286.73px;
+        height: 113.81px;
+      }
+    }
+  
+    &__top_text {
+      max-width: 775px;
+  
+      &:first-child {
+        margin-top: 70px;
+      }
+  
+      &:last-child {
+        margin-bottom: 70px;
+      }
+  
+      & + .condition__top_text {
+        margin-top: 20px;
+      }
+    }
+  
+    &__item {
+      width: 419px;
+      padding: 55px 10px 55px 20px;
+    }
+  
+    &__caption {
+      margin-bottom: 15px;
+  
+      &::before {
+        content: "";
+        width: 33px;
+        height: 5px;
+        margin: 0.5em 16px 0 0;
+      }
+    }
+  
+    &__text {
+      margin: 0 0 13px var(--margin-left);
+  
+      &--heavy {
+        margin-bottom: 11px;
+      }
+  
+      & + .condition__caption {
+        margin-top: 33px;
+      }
+    }
+  
+    &__image {
+      margin: 60px 0 0 50%;
+      transform: translateX(-50%);
+  
+      &--congrats {
+        width: 387.49px;
+        height: 113.57px;
+      }
+  
+      &--map {
+        width: 357.86px;
+        height: 294.54px;
+        margin-top: 30px;
+      }
+  
+      &--refund {
+        width: 191.49px;
+        height: 191.49px;
+        margin-top: 88px;
+      }
+    }
+  
+    &__inner_list {
+      margin: 0 0 13px var(--margin-left);
+  
+      &--wave {
+        padding-left: 15px;
+        position: relative;
+  
+        &::before {
+          width: 5px;
+        }
+  
+        .condition__inner_item {
+          margin-bottom: 7px;
+        }
+      }
+    }
+  
+    &__inner_item {
+      margin-bottom: 13px;
+  
+      &::before {
+        width: 7px;
+        height: 7px;
+        left: -22px;
+      } 
+    }
+    
+    &__companies {
+      margin: 0 13px 0 var(--margin-left);
+    }
+  
+    &__company {
+      margin-top: 25px;
+  
+      &--delovyelinii {
+        width: 180.88px;
+        height: 27.48px;
+      }
+  
+      &--pek {
+        width: 110.99px;
+        height: 12.09px;
+      }
+      
+      &--gtd {
+        width: 81.11px;
+        height: 29.88px;
+      }
+      
+      &--cdek {
+        width: 74.7px;
+        height: 32.02px;
+      }
+      
+      &--zhde {
+        width: 56.21px;
+        height: 54.07px;
+      }
+    }
+  
+  }
+}
+
+
+@media (max-width: 767px) {
+  .condition {
+    --margin-left: 38px;
+  
+    &__top_list {
+      padding: 15px;
+      margin-block: 80px;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    &__top_item {
+      width: 100%;
+      max-width: 290px;
+      margin-right: 0;
+      margin-bottom: 80px;
+  
+      >p {
+        min-height: 0;
+        margin-top: 25px;
+      }
+    }
+  
+    &__top_image {
+      margin-bottom: auto;
+  
+      &--to_cart {
+        width: 155.33px;
+        height: 75.72px;
+      }
+  
+      &--check {
+        width: 188.11px;
+        height: 98.67px;
+      }
+      
+      &--make {
+        width: 236.19px;
+        height: 93.75px;
+      }
+    }
+  
+    &__top_text {
+      &:first-child {
+        margin-top: 50px;
+      }
+  
+      &:last-child {
+        margin-bottom: 50px;
+      }
+  
+      & + .condition__top_text {
+        margin-top: 10px;
+      }
+    }
+  
+    &__list {
+      flex-direction: column;
+    }
+  
+    &__item {
+      width: 100%;
+      padding: 42px 4px 30px;
+      margin-bottom: 48px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  
+    &__caption {
+      margin-bottom: 11px;
+  
+      &::before {
+        width: 25px;
+        height: 5px;
+        margin: 0.5em 13px 0 0;
+      }
+    }
+  
+    &__text {
+      margin: 0 0 11px var(--margin-left);
+  
+      &--heavy {
+        margin-bottom: 10px;
+      }
+  
+      & + .condition__caption {
+        margin-top: 38px;
+      }
+    }
+  
+    &__image {
+      margin: 75px 0 0 50%;
+      transform: translateX(-50%);
+  
+      &--congrats {
+        width: 246.45px;
+        height: 72.24px;
+      }
+  
+      &--map {
+        width: 271.59px;
+        height: 223.54px;
+        margin-top: 44px;
+      }
+  
+      &--refund {
+        width: 144.21px;
+        height: 144.21px;
+        margin-top: 30px;
+      }
+    }
+  
+    &__inner_list {
+      margin: 0 0 11px var(--margin-left);
+  
+      &--wave {
+        padding-left: 15px;
+        position: relative;
+  
+        &::before {
+          width: 4px;
+        }
+  
+        .condition__inner_item {
+          margin-bottom: 8px;
+        }
+      }
+    }
+  
+    &__inner_item {
+      margin-bottom: 11px;
+      position: relative;
+  
+      &::before {
+        width: 5px;
+        height: 5px;
+        left: -18px;
+      } 
+    }
+  
+    &__companies {
+      margin: 0 10px 0 var(--margin-left);
+    }
+  
+    &__company {
+      margin-top: 18px;
+  
+      &--delovyelinii {
+        width: 137.28px;
+        height: 20.86px;
+      }
+  
+      &--pek {
+        width: 84.23px;
+        height: 9.18px;
+      }
+      
+      &--gtd {
+        width: 61.55px;
+        height: 22.68px;
+      }
+      
+      &--cdek {
+        width: 56.69px;
+        height: 24.3px;
+      }
+      
+      &--zhde {
+        width: 42.66px;
+        height: 41.04px;
+      }
+    }
+  
+  }
+}

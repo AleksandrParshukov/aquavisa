@@ -1,0 +1,156 @@
+.promotions {
+  padding-inline: @padding-desktop;
+  .main_padding();
+  .catalog_bg();
+
+  &__title {
+    margin-top: 15px;
+  }
+
+  &__list {
+    width: 100%;
+    margin-top: 80px;
+  
+    .owl-stage {
+      display: flex;
+    }
+
+    .owl-item {
+      height: auto;
+      margin-right: 20px;
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+
+  &__item {
+    width: 440px;
+    height: 100%;
+    padding-block: 10px 60px;
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 78px;
+      height: 82px;
+      background: transparent url(../img/icons/star_10.svg) no-repeat center;
+      background-size: contain;
+      display: block;
+      position: absolute;
+      top: -26px;
+      right: -15px;
+    }
+  }
+
+  &__image_wrap {
+    width: 268px;
+    height: 225px;
+  }
+
+  &__image {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  &__caption {
+    margin-top: 165px;
+  }
+
+  &__recommend {
+    margin-top: 110px;
+  }
+}
+
+
+@media (max-width: 1400px) {
+  .promotions {
+    padding-inline: @padding-laptop;
+  
+    &__title {
+      margin-top: 11px;
+    }
+  
+    &__list {
+      margin-top: 55px;
+  
+      .owl-item {
+        margin-right: 15px;
+      }
+    }
+  
+    &__item {
+      width: 314px;
+      padding-block: 5px 45px;
+  
+      &::after {
+        content: "";
+        width: 58px;
+        height: 58px;
+        top: -19px;
+        right: -11px;
+      }
+    }
+  
+    &__image_wrap {
+      width: 190.88px;
+      height: 160.25px;
+    }
+
+    &__caption {
+      margin-top: 115px;
+    }
+  
+    &__recommend {
+      margin-top: 80px;
+    }
+  }
+}
+
+
+@media (max-width: 767px) {
+  .promotions {
+    padding-inline: @padding-mobile;
+  
+    &__title {
+      margin-top: 10px;
+    }
+  
+    &__list {
+      margin-top: 70px;
+  
+      .owl-item {
+        margin-right: 12px;
+      }
+    }
+  
+    &__item {
+      width: 261px;
+      padding-block: 5px 35px;
+      position: relative;
+  
+      &::after {
+        content: "";
+        width: 48px;
+        height: 49px;
+        top: -15px;
+        right: -9px;
+      }
+    }
+  
+    &__image_wrap {
+      width: 159px;
+      height: 133px;
+    }
+  
+    &__caption {
+      font-weight: normal;
+      margin-top: 95px;
+    }
+  
+    &__recommend {
+      margin-top: 30px;
+    }
+  }
+}

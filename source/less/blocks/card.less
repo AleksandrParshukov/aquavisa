@@ -1,0 +1,164 @@
+.card {
+  max-width: 340px;
+  padding: 65px 25px 45px 20px;
+  background-color: @card-black;
+
+  &__image {
+    width: 270px;
+    height: 123px;
+    margin: 0 auto 25px;
+
+    >img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+
+  &__price {
+    margin-bottom: 20px;
+  }
+
+  &__name {
+    margin-bottom: auto;
+
+    >h3 {
+      font: inherit;
+    }
+  }
+
+  &__articul {
+    color: #404050;
+    margin: 12px 0 20px;
+  }
+
+  &__control {
+    &--cart {
+      padding: 7px 30px 8px 5px;
+      background-color: #1D1D26;
+      border-radius: 10px;
+
+      span {
+        margin-left: 22px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1400px) {
+  .card {
+    max-width: 240px;
+    padding: 30px 18px 27px;
+  
+    &__image {
+      width: 192px;
+      height: 86px;
+      margin: 0 auto 15px;
+    }
+  
+    &__price {
+      margin-bottom: 14px;
+    }
+  
+    &__articul {
+      margin: 7px 0 16px;
+    }
+  
+    &__control {
+      &--cart {
+        padding: 6px 14px 7px 5px;
+        border-radius: 7.11458px;
+
+        >img {
+          width: 28px;
+          height: 23px;
+        }
+  
+        span {
+          font-size: 16px;
+          line-height: 18px;
+          margin-left: 15px;
+        }
+      }
+
+      &--comparison {
+        >img {
+          width: 16px;
+          height: 22px;
+        }
+      }
+
+      &--favorites {
+        >img {
+          width: 23px;
+          height: 21px;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 767px) {
+  .card {
+    max-width: 140px;
+    padding: 30px 10px 15px;
+    background-color: @card-black;
+  
+    &__image {
+      width: 112px;
+      height: 50px;
+      margin: 0 auto 10px;
+    }
+  
+    &__price {
+      font-size: 14px;
+      line-height: 16px;
+      margin-bottom: 10px;
+    }
+  
+    &__name {
+      font-size: 8px;
+      line-height: 9px;
+      margin-bottom: auto;
+    }
+  
+    &__articul {
+      font-size: 8px;
+      line-height: 9px;
+      margin: 5px 0 8px;
+    }
+  
+    &__control {
+      &--cart {
+        padding: 4px 11px 4px 3px;
+        border-radius: 4.17203px;
+
+        >img {
+          width: 16px;
+          height: 13px;
+        }
+  
+        span {
+          font-size: 8px;
+          line-height: 9px;
+          margin-left: 10px;
+        }
+      }
+
+      &--comparison {
+        >img {
+          width: 10px;
+          height: 13px;
+        }
+      }
+
+      &--favorites {
+        >img {
+          width: 14px;
+          height: 13px;
+        }
+      }
+    }
+  }
+}

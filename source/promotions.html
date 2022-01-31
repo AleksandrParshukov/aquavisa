@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;700&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <title>Document</title>
+</head>
+<body>
+  <header class="header" id="main-header">
+    <div class="header__container container d-flex align-items-center justify-content-between">
+      <a class="header__logo" href="index.html">
+        <img src="img/logo.svg" alt="Лого" width="110" height="54">
+      </a>
+
+      <button class="header__open_menu d-flex align-items-center justify-content-center"><img src="img/icons/hamburger_btn.svg" width="43" height="30"></button>
+
+      <div class="header__main_nav_row d-flex flex-wrap align-content-start">
+        <button class="header__close_menu"><img src="img/icons/cross.svg" width="44" height="44"></button>
+
+        <a class="header__login text text_small">Войти</a>
+
+        <nav class="main_nav d-flex">
+          <div class="main_nav__wrapper">
+            <ul class="main_nav__list d-flex flex-column">
+              <li class="main_nav__item">
+                <a class="main_nav__link text" href="index.html">Главная</a>
+              </li>
+              <li class="main_nav__item">
+                <a class="main_nav__link text" href="catalog.html">Каталог</a>
+              </li>
+              <li class="main_nav__item">
+                <a class="main_nav__link text" href="promotions.html">Акции</a>
+              </li>
+              <li class="main_nav__item">
+                <a class="main_nav__link text" href="services.html">Услуги</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="main_nav__wrapper">
+            <ul class="main_nav__list d-flex flex-column">
+              <li class="main_nav__item">
+                <a class="main_nav__link text" href="about.html">О компании</a>
+              </li>
+              <li class="main_nav__item">
+                <a class="main_nav__link text" href="blog.html">Блог</a>
+              </li>
+              <li class="main_nav__item">
+                <a class="main_nav__link text" href="delivery.html">Доставка и оплата</a>
+              </li>
+              <li class="main_nav__item">
+                <a class="main_nav__link text" href="contacts.html">Контакты</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="main_nav__wrapper">
+            <ul class="main_nav__social d-flex flex-column">
+              <li class="main_nav__social_item">
+                <a class="main_nav__social_link text text_small" href="about.html">Instagram</a>
+              </li>
+              <li class="main_nav__social_item">
+                <a class="main_nav__social_link text text_small" href="blog.html">Facebook</a>
+              </li>
+              <li class="main_nav__social_item">
+                <a class="main_nav__social_link text text_small" href="delivery.html">Вконтакте</a>
+              </li>
+            </ul>
+
+            <div class="main_nav__contacts d-flex flex-column">
+              <a class="text text_small" href="mailto:sale@aquavisa.ru">sale@aquavisa.ru</a>
+              <a class="text text_small" href="tel:+78124000040">+7 (812) 40-000-40</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="main promotions">
+    <h1 class="promotions__title h2">Акции</h1>
+
+    <ul class="breadcrumb d-flex">
+      <li class="breadcrumb__item">
+        <a class="breadcrumb__link text text_small" href="index.html">Главная</a>
+      </li>
+      <li class="breadcrumb__item">
+        <a class="breadcrumb__link text text_small">Акции</a>
+      </li>
+    </ul>
+
+    <div class="promotions__row d-flex">
+      <div class="promotions__list d-flex draggable">
+        <div class="promotions__item card_wrapper d-flex flex-column align-items-center">
+          <div class="promotions__image_wrap d-flex justify-content-center align-items-center">
+            <img class="promotions__image" src="img/promotions_1.png">
+          </div>
+          <p class="text text-center">Насосы для бассейнов</p>
+        </div>
+        <div class="promotions__item card_wrapper d-flex flex-column align-items-center">
+          <div class="promotions__image_wrap d-flex justify-content-center align-items-center">
+            <img class="promotions__image" src="img/promotions_2.png">
+          </div>
+          <p class="text text-center">Противотоки для бассейнов</p>
+        </div>
+        <div class="promotions__item card_wrapper d-flex flex-column align-items-center">
+          <div class="promotions__image_wrap d-flex justify-content-center align-items-center">
+            <img class="promotions__image" src="img/promotions_3.png">
+          </div>
+          <p class="text">Роботы для бассейнов</p>
+        </div>
+        <div class="promotions__item card_wrapper d-flex flex-column align-items-center">
+          <div class="promotions__image_wrap d-flex justify-content-center align-items-center">
+            <img class="promotions__image" src="img/promotions_4.png">
+          </div>
+          <p class="text">Тепловые насосы</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="promotions__row d-flex flex-column">
+      <h2 class="promotions__caption h3">Лучшие предложения</h2>
+
+      <div class="promotions__recommend products_list d-flex flex-wrap draggable">
+        <div class="products_list__item card card_wrapper d-flex flex-wrap">
+          <div class="card__image">
+            <img src="img/catalog_pool.png" width="270" height="105" alt="Фото товара">
+          </div>
+          <p class="card__price text">476 000 ₽</p>
+
+          <a class="card__name text text_small" href="matras-tempur-original-supreme.html"><h3>Композитный бассейн ROYAL 9037 (с ППУ, цвет голубой)</h3></a>
+          
+          <p class="card__articul text_tiny">Артикул:18485</p>
+
+          <div class="card__controls d-flex justify-content-between align-items-center">
+            <button class="card__control card__control--cart d-flex align-items-center" type="button"><img src="img/icons/cart.svg" width="39" height="31"> <span class="text text_tiny">Заказать</span></button>
+            <button class="card__control card__control--comparison" type="button"><img src="img/icons/comparison.svg" width="23" height="32"></button>
+            <button class="card__control card__control--favorites" type="button"><img src="img/icons/favorites.svg" width="33" height="31"></button>
+          </div>
+        </div>
+        <div class="products_list__item card card_wrapper d-flex flex-wrap">
+          <div class="card__image">
+            <img src="img/catalog_pool.png" width="270" height="105" alt="Фото товара">
+          </div>
+          <p class="card__price text">476 000 ₽</p>
+
+          <a class="card__name text text_small" href="matras-tempur-original-supreme.html"><h3>Композитный бассейн ROYAL 9037 (с ППУ, цвет голубой)</h3></a>
+          
+          <p class="card__articul text_tiny">Артикул:18485</p>
+
+          <div class="card__controls d-flex justify-content-between align-items-center">
+            <button class="card__control card__control--cart d-flex align-items-center" type="button"><img src="img/icons/cart.svg" width="39" height="31"> <span class="text text_tiny">Заказать</span></button>
+            <button class="card__control card__control--comparison" type="button"><img src="img/icons/comparison.svg" width="23" height="32"></button>
+            <button class="card__control card__control--favorites" type="button"><img src="img/icons/favorites.svg" width="33" height="31"></button>
+          </div>
+        </div>
+        <div class="products_list__item card card_wrapper d-flex flex-wrap">
+          <div class="card__image">
+            <img src="img/catalog_pool.png" width="270" height="105" alt="Фото товара">
+          </div>
+          <p class="card__price text">476 000 ₽</p>
+
+          <a class="card__name text text_small" href="matras-tempur-original-supreme.html"><h3>Композитный бассейн ROYAL 9037 (с ППУ, цвет голубой)</h3></a>
+          
+          <p class="card__articul text_tiny">Артикул:18485</p>
+
+          <div class="card__controls d-flex justify-content-between align-items-center">
+            <button class="card__control card__control--cart d-flex align-items-center" type="button"><img src="img/icons/cart.svg" width="39" height="31"> <span class="text text_tiny">Заказать</span></button>
+            <button class="card__control card__control--comparison" type="button"><img src="img/icons/comparison.svg" width="23" height="32"></button>
+            <button class="card__control card__control--favorites" type="button"><img src="img/icons/favorites.svg" width="33" height="31"></button>
+          </div>
+        </div>
+        <div class="products_list__item card card_wrapper d-flex flex-wrap">
+          <div class="card__image">
+            <img src="img/catalog_pool.png" width="270" height="105" alt="Фото товара">
+          </div>
+          <p class="card__price text">476 000 ₽</p>
+
+          <a class="card__name text text_small" href="matras-tempur-original-supreme.html"><h3>Композитный бассейн ROYAL 9037 (с ППУ, цвет голубой)</h3></a>
+          
+          <p class="card__articul text_tiny">Артикул:18485</p>
+
+          <div class="card__controls d-flex justify-content-between align-items-center">
+            <button class="card__control card__control--cart d-flex align-items-center" type="button"><img src="img/icons/cart.svg" width="39" height="31"> <span class="text text_tiny">Заказать</span></button>
+            <button class="card__control card__control--comparison" type="button"><img src="img/icons/comparison.svg" width="23" height="32"></button>
+            <button class="card__control card__control--favorites" type="button"><img src="img/icons/favorites.svg" width="33" height="31"></button>
+          </div>
+        </div>
+        <div class="products_list__item card card_wrapper d-flex flex-wrap">
+          <div class="card__image">
+            <img src="img/catalog_pool.png" width="270" height="105" alt="Фото товара">
+          </div>
+          <p class="card__price text">476 000 ₽</p>
+
+          <a class="card__name text text_small" href="matras-tempur-original-supreme.html"><h3>Композитный бассейн ROYAL 9037 (с ППУ, цвет голубой)</h3></a>
+          
+          <p class="card__articul text_tiny">Артикул:18485</p>
+
+          <div class="card__controls d-flex justify-content-between align-items-center">
+            <button class="card__control card__control--cart d-flex align-items-center" type="button"><img src="img/icons/cart.svg" width="39" height="31"> <span class="text text_tiny">Заказать</span></button>
+            <button class="card__control card__control--comparison" type="button"><img src="img/icons/comparison.svg" width="23" height="32"></button>
+            <button class="card__control card__control--favorites" type="button"><img src="img/icons/favorites.svg" width="33" height="31"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer d-flex">
+    <p class="footer__copyright text text_small">2021 © AquaVisa</p>
+    <a class="footer__link text text_small" href="">Договор оферты</a>
+    <a class="footer__link text text_small" href="">Политика конфиденциальности</a>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+</body>
+</html>

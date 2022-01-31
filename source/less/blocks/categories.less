@@ -13,6 +13,25 @@
   }
 }
 
+
+@media (max-width: 1400px) {
+  .categories {
+    flex-wrap: wrap;
+    gap: 15px;
+  
+    &__item {
+      min-width: 171px;
+      flex-grow: 1;
+    }
+  
+    &__btn {
+      padding: 15px 30px;
+      flex-grow: 1;
+    }
+  }
+}
+
+
 @media (max-width: 767px) {
   .categories {
     flex-direction: column;

@@ -8,7 +8,7 @@
 
   &__container {
     width: 100%;
-    padding: 25px 50px;
+    padding: 25px @padding-desktop;
     position: relative;
   }
 
@@ -76,6 +76,39 @@
     }
   }
 }
+
+
+@media (max-width: 1400px) {
+  .header {
+    &__container {
+      padding: 25px @padding-laptop;
+    }
+  
+    &__main_nav_row {
+      padding: 73px 155px;
+      background-color: @black;
+      position: fixed;
+      inset: 0;
+      transform: translateY(-100%);
+      transition: transform 0.4s ease;
+      z-index: 500;
+  
+      &.open {
+        transform: translateY(0);
+      }
+    }
+
+    &__close_menu {
+      right: 155px;
+    }
+  
+    &__login {
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
+}
+
 
 @media (max-width: 767px) {
   .header {

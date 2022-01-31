@@ -1,0 +1,34 @@
+.contacts {
+  .main_padding();
+  .catalog_bg();
+
+  .contacts_block {
+    margin-top: 94px;
+
+    &::after {
+      content: none;
+    }
+
+    &__wrapper {
+      margin-top: 0;
+    }
+  }
+}
+
+
+@media (max-width: 1400px) {
+  .contacts {  
+    .contacts_block {
+      margin-top: 65px;
+    }
+  }
+}
+
+
+@media (max-width: 767px) {
+  .contacts {  
+    .contacts_block {
+      margin-top: 80px;
+    }
+  }
+}

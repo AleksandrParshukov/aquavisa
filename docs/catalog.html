@@ -33,7 +33,7 @@
                 <a class="main_nav__link text" href="index.html">Главная</a>
               </li>
               <li class="main_nav__item">
-                <a class="main_nav__link text" href="catalog.html">Каталог</a>
+                <a class="main_nav__link text" href="catalog_nav.html">Каталог</a>
               </li>
               <li class="main_nav__item">
                 <a class="main_nav__link text" href="promotions.html">Акции</a>
@@ -84,23 +84,23 @@
     </div>
   </header>
 
-  <main class="main catalog">
-    <h1 class="catalog__title h1">Каталог</h1>
+  <main class="main catalog_nav">
+    <h1 class="catalog_nav__title h2">Каталог</h1>
 
     <ul class="breadcrumb d-flex">
       <li class="breadcrumb__item">
         <a class="breadcrumb__link text text_small" href="index.html">Главная</a>
       </li>
       <li class="breadcrumb__item">
-        <a class="breadcrumb__link text text_small" href="">Каталог</a>
+        <a class="breadcrumb__link text text_small">Каталог</a>
       </li>
     </ul>
 
     
-    <div class="catalog__categories_wrapper">
-      <a class="catalog__categories_open button d-flex align-items-center justify-content-between d-md-none">Выбрать категорию</a>
+    <div class="catalog_nav__categories_wrapper">
+      <a class="catalog_nav__categories_open button d-flex align-items-center justify-content-between d-md-none">Выбрать категорию</a>
 
-      <ul class="catalog__categories categories d-flex">
+      <ul class="catalog_nav__categories categories d-flex">
         <li class="categories__item d-flex align-items-center">
           <a class="categories__btn button text_small" href="pools.html">Бассейны</a>
         </li>
@@ -150,7 +150,7 @@
     </div>
 
     
-    <div class="catalog__sections sections">
+    <div class="catalog_nav__sections sections">
       <a class="sections__link_all text text_tiny d-flex align-items-center">Посмотреть всё</a>
 
       <div class="sections__wrapper d-flex">
@@ -159,7 +159,7 @@
 
           <ul class="sections__list d-flex flex-column">
             <li class="sections__item">
-              <a class="sections__link text text_small">Композитные Бассейны</a>
+              <a class="sections__link text text_small" href="pools.html">Композитные Бассейны</a>
             </li>
             <li class="sections__item">
               <a class="sections__link text text_small">Сборные Бассейны</a>
@@ -214,5 +214,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/script.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
 </body>
 </html>

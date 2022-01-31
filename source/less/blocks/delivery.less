@@ -1,0 +1,135 @@
+.delivery {
+  padding-inline: @padding-desktop;
+  .main_padding();
+  .catalog_bg();
+
+  &__title {
+    margin-bottom: 15px;
+  }
+
+  &__conditions_wrapper {
+    margin-top: 40px;
+  }
+
+  &__conditions {
+    width: 100%;
+    box-sizing: border-box;
+
+    .owl-stage-outer {
+      order: 2;
+      overflow: hidden;
+    }
+
+    .owl-stage {
+      display: flex;
+    }
+
+    .owl-item {
+      height: min-content;
+    }
+
+    .owl-dots {
+      display: flex;
+    }
+
+    .owl-dot {
+      margin-right: 22px;
+
+      &:last-child {
+        margin: 0;
+      }
+
+      >.button {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 28px;
+        width: 360.8px;
+        height: 70.78px;
+      }
+    }
+
+    .owl-dot.active {
+      >.button {
+        color: @text-white;
+        background: @dark-blue;
+
+        &::before {
+          background: @dark-blue;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1400px) {
+  .delivery {
+    padding-inline: @padding-laptop;
+  
+    &__title {
+      margin-bottom: 11px;
+    }
+  
+    &__conditions_wrapper {
+      margin-top: 25px;
+    }
+  
+    &__conditions {
+      .owl-dot {
+        margin-right: 15px;
+  
+        >.button {
+          font-size: 18px;
+          line-height: 21px;
+          width: 256.84px;
+          height: 50.38px;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 767px) {
+  .delivery {
+    padding-inline: @padding-mobile;
+
+    &__title {
+      margin-bottom: 10px;
+    }
+  
+    &__conditions_wrapper {
+      margin-top: 54px;
+    }
+  
+    &__conditions {
+      .owl-dots {
+        padding: 3px;
+        overflow-x: auto;
+        scrollbar-width: none;
+        white-space: nowrap;
+
+        &::-webkit-scrollbar { width: 0; }
+      }
+
+      .owl-dot {
+        margin-right: 8px;
+  
+        &:last-child {
+          margin: 0;
+        }
+  
+        >.button {
+          font-size: 14px;
+          line-height: 16px;
+          width: 162px;
+          height: 44px;
+        }
+      }
+    }
+
+    .contacts_block {
+      margin-top: 140px;
+    }
+  }
+}

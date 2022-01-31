@@ -1,0 +1,68 @@
+.catalog_nav {
+  padding-inline: @padding-desktop;
+  .main_padding();
+  .catalog_bg();
+
+  &__title {
+    margin-bottom: 15px;
+  }
+
+  &__categories_wrapper {
+    margin-top: 40px;
+  }
+}
+
+
+@media (max-width: 1400px) {
+  .catalog_nav {
+    padding-inline: @padding-laptop;
+  
+    &__title {
+      margin-bottom: 11px;
+    }
+  
+    &__categories_wrapper {
+      margin-top: 26px;
+    }
+  }
+}
+
+
+@media (max-width: 767px) {
+  .catalog_nav {
+    padding: 145px @padding-mobile 0;
+  
+    &__title {
+      margin-bottom: 10px;
+    }
+
+    &__categories_open {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 16px;
+      width: 100%;
+      max-width: 290px;
+      padding: 12px 21px;
+
+      &::after {
+        content: "";
+        width: 20px;
+        height: 11px;
+        background: transparent url(../img/icons/chevron.svg) no-repeat center;
+        transition: transform 0.3s ease;
+      }
+      
+      &.open::after {
+        transform: rotate(180deg);
+      }
+    }
+
+    &__categories {
+      height: 0;
+      margin: 15px 0;
+      background-color: @black;
+      overflow: hidden;
+      transition: height 0.3s ease;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.catalog_bg() {
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 850px;
+    height: 850px;
+    background: transparent url(../img/catalog_bg.svg) no-repeat center;
+    display: block;
+    position: absolute;
+    top: -94px;
+    right: -46px;
+    transform: rotate(55.26deg);
+    z-index: -1;
+  }
+
+  @media (max-width: 1400px) {
+    &::after {
+      content: "";
+      width: 631.94px;
+      height: 633.33px;
+      background-size: contain;
+      top: -67px;
+      right: -33;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &::after {
+      content: "";
+      width: 423.88px;
+      height: 423.88px;
+      background-size: contain;
+      top: -50px;
+      right: 50%;
+      transform: translateX(60%) rotate(43.02deg);
+    }
+  }
+}

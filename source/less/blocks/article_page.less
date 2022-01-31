@@ -1,0 +1,140 @@
+.article_page {
+  .main_padding();
+  .catalog_bg();
+
+  &__title {
+    margin: 0 0 15px @padding-desktop;
+  }
+
+  .breadcrumb {
+    margin-left: @padding-desktop;
+  }
+
+  &__row {
+    padding-right: @padding-desktop;
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: min-content;
+    grid-template-areas: 'img content'
+                         'back content'
+                         '. content';
+    align-items: start;
+  }
+
+  &__image {
+    width: 625px;
+    height: 646px;
+    margin: 0 190px 120px 0;
+    grid-area: img;
+  }
+
+  &__back_link {
+    margin-left: @padding-desktop;
+    grid-area: back;
+
+    &::before {
+      content: "";
+      width: 108px;
+      height: 16px;
+      background: transparent url("../img/icons/article_wave_back.svg") no-repeat center;
+      background-size: contain;
+      margin-right: 45px;
+    }
+  }
+
+  &__content {
+    margin-top: 30px;
+    grid-area: content;
+
+    >p {
+      margin-bottom: 25px;
+    }
+  }
+}
+
+
+@media (max-width: 1400px) {
+  .article_page {
+    &__title {
+      margin: 0 0 11px @padding-laptop;
+    }
+    
+    &__row {
+      margin-top: 50px;
+    }
+  
+    &__image {
+      width: 444.86px;
+      height: 459.96px;
+      margin: 0 143px 86px 0;
+    }
+  
+    &__back_link {
+  
+      &::before {
+        content: "";
+        width: 78px;
+        height: 13px;
+        margin-right: 33px;
+      }
+    }
+  
+    &__content {
+      margin-top: 30px;
+      grid-area: content;
+  
+      >p {
+        margin-bottom: 22px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 767px) {
+  .article_page {
+  
+    &__title {
+      margin: 0 0 10px @padding-mobile;
+    }
+  
+    .breadcrumb {
+      margin-left: @padding-mobile;
+    }
+  
+    &__row {
+      padding-right: 0;
+      margin-top: 80px;
+      grid-template-columns: 100%;
+      grid-template-areas: 'img' 'content' 'back';
+    }
+  
+    &__image {
+      width: 100%;
+      height: auto;
+      margin: 0 0 65px;
+    }
+  
+    &__back_link {
+      margin-left: @padding-mobile;
+      margin-top: 50px;
+  
+      &::before {
+        content: "";
+        width: 80px;
+        height: 11px;
+        margin-right: 30px;
+      }
+    }
+  
+    &__content {
+      padding-inline: @padding-mobile;
+      margin-top: 0;
+  
+      >p {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

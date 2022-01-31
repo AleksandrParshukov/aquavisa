@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;700&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Document</title>
+</head>
+<body>
+  <header class="header" id="main-header">
+    <div class="header__container container d-flex align-items-center justify-content-between">
+      <a class="header__logo" href="index.html">
+        <img src="img/logo.svg" alt="Лого" width="110" height="54">
+      </a>
+
+      <button class="header__open_menu d-flex align-items-center justify-content-center"><img src="img/icons/hamburger_btn.svg" width="43" height="30"></button>
+
+      <div class="header__main_nav_row d-flex flex-wrap align-content-start">
+        <button class="header__close_menu"><img src="img/icons/cross.svg" width="44" height="44"></button>
+
+        <a class="header__login text text_small">Войти</a>
+
+        <nav class="main_nav d-flex">
+          <div class="main_nav__wrapper">
+            <ul class="main_nav__list d-flex flex-column">
+              <li class="main_nav__item">
+                <a class="main_nav__link text" href="index.html">Главная</a>
+              </li>
+              <li class="main_nav__item">
+                <a class="main_nav__link text" href="service.html">Каталог</a>
+              </li>
+              <li class="main_nav__item">
+                <a class="main_nav__link text" href="promotions.html">Акции</a>
+              </li>
+              <li class="main_nav__item">
+                <a class="main_nav__link text" href="service.html">Услуги</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="main_nav__wrapper">
+            <ul class="main_nav__list d-flex flex-column">
+              <li class="main_nav__item">
+                <a class="main_nav__link text" href="about.html">О компании</a>
+              </li>
+              <li class="main_nav__item">
+                <a class="main_nav__link text" href="blog.html">Блог</a>
+              </li>
+              <li class="main_nav__item">
+                <a class="main_nav__link text" href="delivery.html">Доставка и оплата</a>
+              </li>
+              <li class="main_nav__item">
+                <a class="main_nav__link text" href="contacts.html">Контакты</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="main_nav__wrapper">
+            <ul class="main_nav__social d-flex flex-column">
+              <li class="main_nav__social_item">
+                <a class="main_nav__social_link text text_small" href="about.html">Instagram</a>
+              </li>
+              <li class="main_nav__social_item">
+                <a class="main_nav__social_link text text_small" href="blog.html">Facebook</a>
+              </li>
+              <li class="main_nav__social_item">
+                <a class="main_nav__social_link text text_small" href="delivery.html">Вконтакте</a>
+              </li>
+            </ul>
+
+            <div class="main_nav__contacts d-flex flex-column">
+              <a class="text text_small" href="mailto:sale@aquavisa.ru">sale@aquavisa.ru</a>
+              <a class="text text_small" href="tel:+78124000040">+7 (812) 40-000-40</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="main service">
+    <ul class="breadcrumb d-flex">
+      <li class="breadcrumb__item">
+        <a class="breadcrumb__link text text_small" href="index.html">Главная</a>
+      </li>
+      <li class="breadcrumb__item">
+        <a class="breadcrumb__link text text_small">Услуги</a>
+      </li>
+    </ul>
+
+    <div class="service__top_wrapper">
+      <h1 class="service__title h2">Сервисное обслуживание бассейнов</h1>
+      <p class="text text_small">
+        Выполняем сервисное техническое обслуживание любых бассейнов – 
+        частных, коммерческих, общественных. Выезжаем как на единоразовые 
+        профилактические и срочные работы, так и заключаем договоры 
+        на абонентское обслуживание
+      </p>
+
+      <a class="service__order_link button">Заказать услугу</a>
+
+      <div class="service__top_image">     
+        <img src="img/service_top.png" width="638" height="820">
+      </div>
+    </div>
+
+    <dev class="d-flex flex-column flex-md-row">
+      <p class="service__path_desc text text_heavy">
+        Aquavisa предоставляет услуги 
+        по обслуживанию бассейнов
+      </p>
+
+      <div class="service__path d-flex flex-column">
+        <ul class="service__path_list d-flex">
+          <li class="service__path_item text d-flex align-items-center">
+            Консультирование
+          </li>
+          <li class="service__path_item text d-flex align-items-center">
+            Диагностика
+          </li>
+          <li class="service__path_item text d-flex align-items-center">
+            Уход за водой
+          </li>
+        </ul>
+        <ul class="service__path_list service__path_list--reverse d-flex">
+          <li class="service__path_item text d-flex align-items-center">
+            Обслуживание оборудования
+          </li>
+          <li class="service__path_item text d-flex align-items-center">
+            Консервация бассейна
+          </li>
+        </ul>
+      </div>
+    </dev>
+
+    <dev class="service__include d-flex flex-wrap">
+      <h2 class="service__caption h2">Что включает в себя годовое сервисное обслуживание?</h2>
+
+      <p class="service__include_description text text_small">
+        Вы можете заказать как разовый визит специалиста, 
+        так и годовое обслуживание. Это позволит вам больше 
+        не тратить время на поиск решения той или иной проблемы, 
+        случившейся с вашим бассейном. Более того нашим клиентам 
+        предоставляется постоянная скидка на средства по уходу за 
+        водой, средства для очистки и аксессуары для бассейна.
+      </p>
+      
+      <ul class="service__include_list include d-flex flex-wrap">
+        <li class="include__item">
+          <p class="include__number">1</p>
+
+          <p class="include__text text">
+            Выезд специалиста на объект 
+            в сезон эксплуатации бассейна
+          </p>
+        </li>
+        <li class="include__item">
+          <p class="include__number">2</p>
+
+          <p class="include__text text">
+            Профилактический осмотр оборудования и проведение сервисных работ
+          </p>
+        </li>
+        <li class="include__item">
+          <p class="include__number">3</p>
+
+          <p class="include__text text">
+            Определение химического состава воды с помощью тестеров с последующим регулированием уровня рН
+          </p>
+        </li>
+        <li class="include__item">
+          <p class="include__number">4</p>
+
+          <p class="include__text text">
+            Дезинфекция воды и промывка фильтров
+          </p>
+        </li>
+        <li class="include__item">
+          <p class="include__number">5</p>
+
+          <p class="include__text text">
+            Калибровка электродов станции дозации
+          </p>
+        </li>
+        <li class="include__item">
+          <p class="include__number">6</p>
+
+          <p class="include__text text">
+            Проверка оборудования фильтрации воды, нагревательных приборов
+          </p>
+        </li>
+        <li class="include__item">
+          <p class="include__number">7</p>
+
+          <p class="include__text text">
+            Контроль температуры воды
+          </p>
+        </li>
+        <li class="include__item">
+          <p class="include__number">8</p>
+
+          <p class="include__text text">
+            Консультации по вопросам эксплуатации оборудования
+          </p>
+        </li>
+        <li class="include__item">
+          <p class="include__number">9</p>
+
+          <p class="include__text text">
+            К алибровка электродов станции дозирования
+          </p>
+        </li>
+        <li class="include__item">
+          <p class="include__number">10</p>
+
+          <p class="include__text text">
+            Замена фильтрующего элемента
+          </p>
+        </li>
+        <li class="include__item">
+          <p class="include__number">11</p>
+
+          <p class="include__text text">
+            консервация и расконсервация бассейна
+          </p>
+        </li>
+      </ul>
+    </dev>
+    
+    <div class="contacts_block">
+      <h2 class="contacts_block__title h2">Оформить заявку</h2>
+
+      <form class="contacts_block__form">
+        <fieldset class="contacts_block__fieldset">
+          <legend class="contacts_block__legend text">Оформите заявку на сайте, мы свяжемся с вами в ближайшее время и ответим на все интересующие вопросы.</legend>
+          <div class="contacts_block__row d-flex">
+            <label class="contacts_block__label">
+              <span class="visually_hidden">Ваше имя</span>
+              <input class="contacts_block__input text" name="callback-name" placeholder="Ваше имя">
+            </label>
+            <label class="contacts_block__label">
+              <span class="visually_hidden">Телефон</span>
+              <input class="contacts_block__input text" name="callback-phone" placeholder="Телефон">
+            </label>
+          </div>
+          <div class="contacts_block__row d-flex">
+            <label class="contacts_block__label">
+              <span class="visually_hidden">Email</span>
+              <input class="contacts_block__input text" name="callback-email" placeholder="Email">
+            </label>
+            <label class="contacts_block__label">
+              <span class="visually_hidden">Услуга</span>
+              <input class="contacts_block__input text" name="callback-service" placeholder="Услуга">
+            </label>
+          </div>
+        </fieldset>
+
+        <p class="contacts_block__note text_tiny_subdued">
+          Нажимая на кнопку «Отправить заявку», Вы соглашаетесь 
+          с условиями на передачу персональных данных
+        </p>
+        <button class="contacts_block__submit button" type="submit">Отправить заявку</button>
+      </form>
+    </div>
+  </main>
+
+  <footer class="footer d-flex">
+    <p class="footer__copyright text text_small">2021 © AquaVisa</p>
+    <a class="footer__link text text_small" href="">Договор оферты</a>
+    <a class="footer__link text text_small" href="">Политика конфиденциальности</a>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+</body>
+</html>

@@ -1,4 +1,5 @@
 .breadcrumb {
+  width: 100%;
   align-items: center;
 
   &__item {
@@ -12,6 +13,7 @@
       width: 17px;
       height: 30px;
       background: transparent url(../img/icons/breadcrumb.svg) no-repeat center;
+      background-size: contain;
       display: block;
       margin-left: 10px;
     }
@@ -30,6 +32,22 @@
     color: inherit;
   }
 }
+
+
+@media (max-width: 1400px) {
+  .breadcrumb {
+    &__item {
+      margin-right: 8px;
+  
+      &::after {
+        width: 12px;
+        height: 20px;
+        margin-left: 8px;
+      }
+    }
+  }
+}
+
 
 @media (max-width: 767px) {
   .breadcrumb {

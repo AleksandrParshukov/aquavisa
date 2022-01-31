@@ -10,7 +10,7 @@
     display: block;
     position: absolute;
     top: 0;
-    right: -57px;
+    right: -76px;
     transform: translateY(-50%);
     z-index: -1;
   }
@@ -29,7 +29,12 @@
   }
 
   &__legend {
+    max-width: 965px;
     margin-bottom: 90px;
+  }
+
+  &__row + .contacts_block__row {
+    margin-top: 85px;
   }
 
   &__label {
@@ -95,6 +100,96 @@
   }
 }
 
+
+@media (max-width: 1400px) {
+  .contacts_block {
+    margin-top: 155px;
+    position: relative;
+  
+    &::after {
+      content: "";
+      width: 430.96px;
+      height: 506.56px;
+      background-size: contain;
+      right: -150px;
+    }
+  
+    &__title {
+      margin: 0 0 20px @padding-laptop;
+    }
+  
+    &__form {
+      width: 100%;
+      padding: 0 @padding-laptop;
+    }
+
+    &__legend {
+      max-width: 685px;
+    }
+  
+    &__row + .contacts_block__row {
+      margin-top: 60px;
+    }
+  
+    &__label {
+      min-width: 422px;
+      margin-right: 125px;
+    }
+  
+    &__input {
+      padding: 0 0 15px 30px;
+    }
+  
+    &__note {
+      max-width: 435px;
+      margin: 42px 0 25px;
+    }
+  
+    &__submit {
+      width: 338px;
+      height: 80px;
+    }
+  
+    &__wrapper {
+      margin-top: 175px;
+      background: transparent url(../img/map_bg.svg) no-repeat left bottom;
+      background-size: contain;
+      position: relative;
+  
+      p {
+        letter-spacing: 0.07em;
+        margin: 150px 0 0;
+      }
+      
+      a {
+        letter-spacing: 0.07em;
+        margin-top: 35px;
+      }
+    }
+
+    &__map {
+      max-width: 486px;
+      height: auto;
+    }
+  
+    .to_start {
+      line-height: 100%;
+      letter-spacing: 0.03em;
+      position: absolute;
+      top: 55%;
+      right: -50px;
+      transform: rotate(-90deg) translateY(-60%);
+  
+      &::after {
+        width: 119px;
+        height: 12px;
+        background-size: contain;
+      }
+    }
+  }
+}
+
+
 @media (max-width: 767px) {
   .contacts_block {
     margin-top: 170px;
@@ -122,6 +217,15 @@
       line-height: 16px;
       margin-bottom: 40px;
     }
+
+    &__row {
+      flex-direction: column;
+    }
+  
+    &__row + .contacts_block__row {
+      margin-top: 70px;
+    }
+  
   
     &__label {
       min-width: 0;

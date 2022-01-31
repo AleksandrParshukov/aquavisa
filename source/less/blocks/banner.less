@@ -1,6 +1,8 @@
 .banner {
-  padding: 327px 65px;
+  padding: 327px 65px 376px;
   position: relative;
+  background: transparent url(../img/banner_bg.png) no-repeat bottom right;
+  background-size: auto 100%;
 
   &__caption {
     letter-spacing: 0.01em;
@@ -33,12 +35,39 @@
   }
 }
 
+
+@media (max-width: 1400px) {
+  .banner {
+    padding: 327px 65px 328px;
+    position: relative;
+    background: transparent url(../img/banner_bg_laptop.png) no-repeat bottom right;
+  
+    &__caption {
+      letter-spacing: 0.01em;
+      max-width: 550px;
+      margin: 0 0 18px;
+    }
+  
+    &__text {
+      max-width: 550px;
+      margin-bottom: 45px;
+    }
+  
+    &__button {
+      width: 348px;
+      height: 68px;
+    }
+  }
+}
+
+
 @media (max-width: 767px) {
   .banner {
     padding: 200px @padding-mobile 270px;
     background: none;
   
     &__caption {
+      line-height: 45px;
       letter-spacing: 0.01em;
       max-width: 290px;
       margin: 0 0 5px;
@@ -56,6 +85,13 @@
       width: 100%;
       max-width: 290px;
       height: 55px;
+    }
+
+    &__image {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
     }
   }
 }

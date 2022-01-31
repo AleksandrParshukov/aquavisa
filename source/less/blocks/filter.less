@@ -1,0 +1,221 @@
+.filter {
+  width: 376px;
+  padding: 40px 55px 60px;
+  background-color: @card-black;
+
+  &__container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &:last-child .filter__option {
+      margin: 0;
+    }
+  }
+
+  &__title {
+    width: 100%;
+    margin-bottom: 30px;
+    position: relative;
+  }
+
+  &__option {
+    width: 100%;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__slider {
+    width: 100%;
+    height: 2px;
+    margin: 30px 0;
+    background: #333345;
+    border-radius: 5px;
+    position: relative;
+  }
+
+  &__slider_bar {
+    height: 100%;
+    background: linear-gradient(90.03deg, @dark-blue 23%, @light-blue 113.8%);
+    position: relative;
+    z-index: 1;
+  }
+
+  &__slider_btn {
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(180deg, @dark-blue 0%, @light-blue 100%);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+
+    &::after {
+      content: "";
+      background-color: black;
+      position: absolute;
+      inset: 1px;
+      border-radius: inherit;
+    }
+  }
+
+  &__value {
+    color: #747478;
+    width: 132px;
+    padding: 8px 20px;
+    background-color: #23232E;
+    border: 1px solid #15151D;
+    box-sizing: border-box;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__input {
+    color: inherit;
+    text-align: right;
+    width: 61px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__checkbox_list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__checkbox {
+    display: none;
+
+    & + .filter__label::before {
+      content: "";
+      width: 26px;
+      height: 26px;
+      margin-right: 18px;
+      background: transparent url(../../img/icons/checkbox.svg) no-repeat center;
+      background-size: contain;
+    }
+
+    &:checked + .filter__label::before {
+      background-image:  url(../../img/icons/checkbox_checked.svg);
+    }
+  }
+
+  &__label {
+    margin: 0 0 15px 0;
+    display: flex;
+    align-items: center;
+  }
+}
+
+
+@media (max-width: 1400px) {
+  .filter {
+    width: 290px;
+    padding: 30px 42px 70px;
+  
+    &__title {
+      margin-bottom: 23px;
+    }
+  
+    &__option {
+      margin-bottom: 35px;
+    }
+  
+    &__slider {
+      margin: 11px 0 24px;
+    }
+  
+    &__slider_btn {
+      width: 16px;
+      height: 16px;
+    }
+  
+    &__value {
+      width: 100px;
+      padding: 6px 15px;
+      border-radius: 38.6792px;
+    }
+  
+    &__input {
+      width: 50px;
+    }
+  
+    &__checkbox {
+      & + .filter__label::before {
+        width: 20px;
+        height: 20px;
+        margin-right: 14px;
+      }
+    }
+  
+    &__label {
+      margin: 0 0 12px 0;
+    }
+  }
+}
+
+
+@media (max-width: 576px) {
+  .filter {
+    width: 281px;
+    padding: 30px;
+  
+    &__container {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  
+    &__title {
+      width: 100%;
+      margin-bottom: 12px;
+      position: relative;
+    }
+
+    &__option {
+      width: 100%;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  
+    &__slider {
+      margin: 16px 0 28px;
+    }
+  
+    &__slider_btn {
+      width: 17px;
+      height: 17px;
+    }
+  
+    &__value {
+      color: #747478;
+      width: 108px;
+      padding: 6px 16px;
+    }
+  
+    &__input {
+      width: 50px;
+    }
+  
+    &__checkbox {
+      & + .filter__label::before {
+        content: "";
+        width: 18px;
+        height: 18px;
+        margin-right: 13px;
+      }
+    }
+  }
+}

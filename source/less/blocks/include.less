@@ -1,0 +1,90 @@
+.include {
+  &__item {
+    width: 373px;
+    height: 331px;
+    padding: 141px 27px 0;
+    margin: 0 85px 70px 0;
+    background: transparent url(../img/include_wave_card.svg) no-repeat center;
+    background-size: 100% 100%;
+    position: relative;
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
+
+  &__number {
+    font-family: "Exo", sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 80px;
+    .gradient_text(linear-gradient(180deg, @dark-blue 0%, rgba(0, 68, 255, 0) 100%));
+    position: absolute;
+    top: 38px;
+    left: 27px;
+    
+    @supports (-webkit-text-stroke: 1px blue) {
+      color: @black; /* прозрачный цвет букв */
+      -webkit-text-stroke: 1px @dark-blue;
+    }
+  }
+
+  &__text {
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 25px;
+  }
+}
+
+
+@media (max-width: 1400px) {
+  .include {
+    &__item {
+      width: 265.52px;
+      height: 235.62px;
+      padding: 100px 20px 0;
+      margin: 0 68px 50px 0;
+    }
+  
+    &__number {
+      font-size: 42.7108px;
+      line-height: 57px;
+      top: 27px;
+      left: 20px;
+    }
+  
+    &__text {
+      font-size: 16px;
+      line-height: 18px;
+    }
+  }
+}
+
+
+@media (max-width: 767px) {
+  .include {
+    &__item {
+      width: 245.81px;
+      height: 218.13px;
+      padding: 93px 11px 0 18px;
+      margin: 0 auto 4px;
+  
+      &:nth-child(4n) {
+        margin-right: auto;
+      }
+    }
+  
+    &__number {
+      font-size: 39.5402px;
+      line-height: 53px;
+      top: 25px;
+      left: 18px;
+    }
+  
+    &__text {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+}

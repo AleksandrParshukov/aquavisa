@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;700&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Document</title>
+</head>
+<body>
+  <header class="header" id="main-header">
+    <div class="header__container container d-flex align-items-center justify-content-between">
+      <a class="header__logo" href="index.html">
+        <img src="img/logo.svg" alt="Лого" width="110" height="54">
+      </a>
+
+      <button class="header__open_menu d-flex align-items-center justify-content-center"><img src="img/icons/hamburger_btn.svg" width="43" height="30"></button>
+
+      <div class="header__main_nav_row d-flex flex-wrap align-content-start">
+        <button class="header__close_menu"><img src="img/icons/cross.svg" width="44" height="44"></button>
+
+        <a class="header__login text text_small">Войти</a>
+
+        <nav class="main_nav d-flex">
+          <div class="main_nav__wrapper">
+            <ul class="main_nav__list d-flex flex-column">
+              <li class="main_nav__item">
+                <a class="main_nav__link text" href="index.html">Главная</a>
+              </li>
+              <li class="main_nav__item">
+                <a class="main_nav__link text" href="catalog.html">Каталог</a>
+              </li>
+              <li class="main_nav__item">
+                <a class="main_nav__link text" href="promotions.html">Акции</a>
+              </li>
+              <li class="main_nav__item">
+                <a class="main_nav__link text" href="services.html">Услуги</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="main_nav__wrapper">
+            <ul class="main_nav__list d-flex flex-column">
+              <li class="main_nav__item">
+                <a class="main_nav__link text" href="about.html">О компании</a>
+              </li>
+              <li class="main_nav__item">
+                <a class="main_nav__link text" href="blog.html">Блог</a>
+              </li>
+              <li class="main_nav__item">
+                <a class="main_nav__link text" href="delivery.html">Доставка и оплата</a>
+              </li>
+              <li class="main_nav__item">
+                <a class="main_nav__link text" href="contacts.html">Контакты</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="main_nav__wrapper">
+            <ul class="main_nav__social d-flex flex-column">
+              <li class="main_nav__social_item">
+                <a class="main_nav__social_link text text_small" href="about.html">Instagram</a>
+              </li>
+              <li class="main_nav__social_item">
+                <a class="main_nav__social_link text text_small" href="blog.html">Facebook</a>
+              </li>
+              <li class="main_nav__social_item">
+                <a class="main_nav__social_link text text_small" href="delivery.html">Вконтакте</a>
+              </li>
+            </ul>
+
+            <div class="main_nav__contacts d-flex flex-column">
+              <a class="text text_small" href="mailto:sale@aquavisa.ru">sale@aquavisa.ru</a>
+              <a class="text text_small" href="tel:+78124000040">+7 (812) 40-000-40</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="main catalog d-flex flex-wrap">
+    <h1 class="catalog__title h2">Композитные бассейны</h1>
+
+    <ul class="breadcrumb d-flex">
+      <li class="breadcrumb__item">
+        <a class="breadcrumb__link text text_small" href="index.html">Главная</a>
+      </li>
+      <li class="breadcrumb__item">
+        <a class="breadcrumb__link text text_small" href="catalog.html">Каталог</a>
+      </li>
+      <li class="breadcrumb__item">
+        <a class="breadcrumb__link text text_small">Бассейны</a>
+      </li>
+    </ul>
+
+    <dev class="d-flex">
+      <nav class="catalog__nav_wrapper d-none d-md-flex flex-column">
+        <ul class="catalog__nav">
+          <li class="catalog__nav_item">
+            <a class="catalog__nav_link text text_small current">Бассейны</a>
+          </li>
+          <li class="catalog__nav_item">
+            <a class="catalog__nav_link text text_small">Химия для бассейнов</a>
+          </li>
+          <li class="catalog__nav_item">
+            <a class="catalog__nav_link text text_small">Пылесосы для бассейнов</a>
+          </li>
+          <li class="catalog__nav_item">
+            <a class="catalog__nav_link text text_small">Покрытия для бассейнов </a>
+          </li>
+          <li class="catalog__nav_item">
+            <a class="catalog__nav_link text text_small">Аксессуары для бассейнов</a>
+          </li>
+          <li class="catalog__nav_item">
+            <a class="catalog__nav_link text text_small">Оборудование</a>
+          </li>
+          <li class="catalog__nav_item">
+            <a class="catalog__nav_link text text_small">Трубы, краны, фитинги</a>
+          </li>
+          <li class="catalog__nav_item">
+            <a class="catalog__nav_link text text_small">Лестницы и поручни</a>
+          </li>
+          <li class="catalog__nav_item">
+            <a class="catalog__nav_link text text_small">Закладное оборудование для бассейнов</a>
+          </li>
+          <li class="catalog__nav_item">
+            <a class="catalog__nav_link text text_small">Освещение бассейна</a>
+          </li>
+          <li class="catalog__nav_item">
+            <a class="catalog__nav_link text text_small">Переливная решетка</a>
+          </li>
+          <li class="catalog__nav_item">
+            <a class="catalog__nav_link text text_small">Аттракционы</a>
+          </li>
+          <li class="catalog__nav_item">
+            <a class="catalog__nav_link text text_small">Отделочные материалы</a>
+          </li>
+          <li class="catalog__nav_item">
+            <a class="catalog__nav_link text text_small">Осушители воздуха для бассейнов</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="catalog__container d-flex flex-wrap">
+        <div class="catalog__sort_wrap d-flex">
+          <p class="catalog__sort_title text text_small d-flex align-items-baseline">
+            Сортировка
+          </p>
+          <div class="catalog__sort d-none">
+            <button class="catalog__sort_btn" type="button">По умолчанию</button>
+          </div>
+        </div>
+
+        <div class="catalog__filter_wrap d-flex">
+          <a class="catalog__filter_title text text_small d-flex align-items-center">
+            <svg class="catalog__filter_img" width="33" height="24" viewBox="0 0 33 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.38965 5.03391H32.9998" stroke="currentColor"/>
+              <circle cx="4.47458" cy="4.47458" r="3.97458" fill="#101014" stroke="currentColor"/>
+              <path d="M0 18.6035L33 18.6035" stroke="currentColor"/>
+              <circle cx="25.9965" cy="19.1629" r="3.97458" fill="#101014" stroke="currentColor"/>
+              </svg>
+            <span class="d-none d-md-inline">Фильтровать</span>
+          </a>
+          <div class="catalog__filter filter card_wrapper">
+            <form class="filter__form d-flex flex-column">
+    
+              <div class="filter__container">
+                <p class="filter__title text">Цена</p>
+    
+                <div class="filter__option filter__option--price d-flex">
+                  <div class="filter__slider">
+                    <button class="filter__slider_btn filter__slider_btn--min" type="button" style="left: 5%;"></button>
+                    <div class="filter__slider_bar" style="width: 45%; left: 5%;"></div>
+                    <button class="filter__slider_btn filter__slider_btn--max" type="button" style="left: 50%;"></button>
+                  </div>
+    
+                  <div class="filter__value d-flex">
+                    <span class="text_tiny">от</span>
+                    <input class="filter__input text_tiny" type="text" placeholder="0" id="min_price" name="min_price">
+                  </div>
+                  <div class="filter__value d-flex">
+                    <span class="text_tiny">до</span>
+                    <input class="filter__input text_tiny" type="text" placeholder="50000" id="max_price" name="max_price">
+                  </div>
+                </div>
+              </div>
+    
+              <div class="filter__container">
+                <p class="filter__title text">Бренд</p>
+    
+                <div class="filter__option filter__option--brand d-flex">
+                  <div class="filter__checkbox_list">
+                    <input class="filter__checkbox" type="checkbox" id="brand_astralpool" name="brand_astralpool">
+                    <label class="filter__label text text_small" for="brand_astralpool">AstralPool</label>
+                    <input class="filter__checkbox" type="checkbox" id="brand_bestway" name="brand_bestway">
+                    <label class="filter__label text text_small" for="brand_bestway">Bestway</label>
+                    <input class="filter__checkbox" type="checkbox" id="brand_finn" name="brand_finn">
+                    <label class="filter__label text text_small" for="brand_finn">Finn</label>
+                    <input class="filter__checkbox" type="checkbox" id="brand_ique" name="brand_ique">
+                    <label class="filter__label text text_small" for="brand_ique">IQUE</label>
+                    <input class="filter__checkbox" type="checkbox" id="brand_polarspa" name="brand_polarspa">
+                    <label class="filter__label text text_small" for="brand_polarspa">PolarSpa</label>
+                  </div>
+                </div>
+              </div>
+    
+            </form>
+          </div>
+        </div>
+
+        <ul class="catalog__list d-flex flex-wrap">
+          <li class="catalog__item card card_wrapper d-flex flex-wrap">
+            <div class="card__image">
+              <img src="img/catalog_pool.png" width="270" height="105" alt="Фото товара">
+            </div>
+            <p class="card__price text">476 000 ₽</p>
+
+            <a class="card__name text text_small" href="pool.html"><h3>Композитный бассейн ROYAL 9037 (с ППУ, цвет голубой)</h3></a>
+            
+            <p class="card__articul text_tiny">Артикул:18485</p>
+
+            <div class="card__controls d-flex justify-content-between align-items-center">
+              <button class="card__control card__control--cart d-flex align-items-center" type="button"><img src="img/icons/cart.svg" width="39" height="31"> <span class="text text_tiny">Заказать</span></button>
+              <button class="card__control card__control--comparison" type="button"><img src="img/icons/comparison.svg" width="23" height="32"></button>
+              <button class="card__control card__control--favorites" type="button"><img src="img/icons/favorites.svg" width="33" height="31"></button>
+            </div>
+          </li>
+          <li class="catalog__item card card_wrapper d-flex flex-wrap">
+            <div class="card__image">
+              <img src="img/catalog_pool.png" width="270" height="105" alt="Фото товара">
+            </div>
+            <p class="card__price text">476 000 ₽</p>
+
+            <a class="card__name text text_small" href="pool.html"><h3>Композитный бассейн ROYAL 9037 (с ППУ, цвет голубой)</h3></a>
+            
+            <p class="card__articul text_tiny">Артикул:18485</p>
+
+            <div class="card__controls d-flex justify-content-between align-items-center">
+              <button class="card__control card__control--cart d-flex align-items-center" type="button"><img src="img/icons/cart.svg" width="39" height="31"> <span class="text text_tiny">Заказать</span></button>
+              <button class="card__control card__control--comparison" type="button"><img src="img/icons/comparison.svg" width="23" height="32"></button>
+              <button class="card__control card__control--favorites" type="button"><img src="img/icons/favorites.svg" width="33" height="31"></button>
+            </div>
+          </li>
+          <li class="catalog__item card card_wrapper d-flex flex-wrap">
+            <div class="card__image">
+              <img src="img/catalog_pool.png" width="270" height="105" alt="Фото товара">
+            </div>
+            <p class="card__price text">476 000 ₽</p>
+
+            <a class="card__name text text_small" href="pool.html"><h3>Композитный бассейн ROYAL 9037 (с ППУ, цвет голубой)</h3></a>
+            
+            <p class="card__articul text_tiny">Артикул:18485</p>
+
+            <div class="card__controls d-flex justify-content-between align-items-center">
+              <button class="card__control card__control--cart d-flex align-items-center" type="button"><img src="img/icons/cart.svg" width="39" height="31"> <span class="text text_tiny">Заказать</span></button>
+              <button class="card__control card__control--comparison" type="button"><img src="img/icons/comparison.svg" width="23" height="32"></button>
+              <button class="card__control card__control--favorites" type="button"><img src="img/icons/favorites.svg" width="33" height="31"></button>
+            </div>
+          </li>
+          <li class="catalog__item card card_wrapper d-flex flex-wrap">
+            <div class="card__image">
+              <img src="img/catalog_pool.png" width="270" height="105" alt="Фото товара">
+            </div>
+            <p class="card__price text">476 000 ₽</p>
+
+            <a class="card__name text text_small" href="pool.html"><h3>Композитный бассейн ROYAL 9037 (с ППУ, цвет голубой)</h3></a>
+            
+            <p class="card__articul text_tiny">Артикул:18485</p>
+
+            <div class="card__controls d-flex justify-content-between align-items-center">
+              <button class="card__control card__control--cart d-flex align-items-center" type="button"><img src="img/icons/cart.svg" width="39" height="31"> <span class="text text_tiny">Заказать</span></button>
+              <button class="card__control card__control--comparison" type="button"><img src="img/icons/comparison.svg" width="23" height="32"></button>
+              <button class="card__control card__control--favorites" type="button"><img src="img/icons/favorites.svg" width="33" height="31"></button>
+            </div>
+          </li>
+          <li class="catalog__item card card_wrapper d-flex flex-wrap">
+            <div class="card__image">
+              <img src="img/catalog_pool.png" width="270" height="105" alt="Фото товара">
+            </div>
+            <p class="card__price text">476 000 ₽</p>
+
+            <a class="card__name text text_small" href="pool.html"><h3>Композитный бассейн ROYAL 9037 (с ППУ, цвет голубой)</h3></a>
+            
+            <p class="card__articul text_tiny">Артикул:18485</p>
+
+            <div class="card__controls d-flex justify-content-between align-items-center">
+              <button class="card__control card__control--cart d-flex align-items-center" type="button"><img src="img/icons/cart.svg" width="39" height="31"> <span class="text text_tiny">Заказать</span></button>
+              <button class="card__control card__control--comparison" type="button"><img src="img/icons/comparison.svg" width="23" height="32"></button>
+              <button class="card__control card__control--favorites" type="button"><img src="img/icons/favorites.svg" width="33" height="31"></button>
+            </div>
+          </li>
+          <li class="catalog__item card card_wrapper d-flex flex-wrap">
+            <div class="card__image">
+              <img src="img/catalog_pool.png" width="270" height="105" alt="Фото товара">
+            </div>
+            <p class="card__price text">476 000 ₽</p>
+
+            <a class="card__name text text_small" href="pool.html"><h3>Композитный бассейн ROYAL 9037 (с ППУ, цвет голубой)</h3></a>
+            
+            <p class="card__articul text_tiny">Артикул:18485</p>
+
+            <div class="card__controls d-flex justify-content-between align-items-center">
+              <button class="card__control card__control--cart d-flex align-items-center" type="button"><img src="img/icons/cart.svg" width="39" height="31"> <span class="text text_tiny">Заказать</span></button>
+              <button class="card__control card__control--comparison" type="button"><img src="img/icons/comparison.svg" width="23" height="32"></button>
+              <button class="card__control card__control--favorites" type="button"><img src="img/icons/favorites.svg" width="33" height="31"></button>
+            </div>
+          </li>
+          <li class="catalog__item card card_wrapper d-flex flex-wrap">
+            <div class="card__image">
+              <img src="img/catalog_pool.png" width="270" height="105" alt="Фото товара">
+            </div>
+            <p class="card__price text">476 000 ₽</p>
+
+            <a class="card__name text text_small" href="pool.html"><h3>Композитный бассейн ROYAL 9037 (с ППУ, цвет голубой)</h3></a>
+            
+            <p class="card__articul text_tiny">Артикул:18485</p>
+
+            <div class="card__controls d-flex justify-content-between align-items-center">
+              <button class="card__control card__control--cart d-flex align-items-center" type="button"><img src="img/icons/cart.svg" width="39" height="31"> <span class="text text_tiny">Заказать</span></button>
+              <button class="card__control card__control--comparison" type="button"><img src="img/icons/comparison.svg" width="23" height="32"></button>
+              <button class="card__control card__control--favorites" type="button"><img src="img/icons/favorites.svg" width="33" height="31"></button>
+            </div>
+          </li>
+          <li class="catalog__item card card_wrapper d-flex flex-wrap">
+            <div class="card__image">
+              <img src="img/catalog_pool.png" width="270" height="105" alt="Фото товара">
+            </div>
+            <p class="card__price text">476 000 ₽</p>
+
+            <a class="card__name text text_small" href="pool.html"><h3>Композитный бассейн ROYAL 9037 (с ППУ, цвет голубой)</h3></a>
+            
+            <p class="card__articul text_tiny">Артикул:18485</p>
+
+            <div class="card__controls d-flex justify-content-between align-items-center">
+              <button class="card__control card__control--cart d-flex align-items-center" type="button"><img src="img/icons/cart.svg" width="39" height="31"> <span class="text text_tiny">Заказать</span></button>
+              <button class="card__control card__control--comparison" type="button"><img src="img/icons/comparison.svg" width="23" height="32"></button>
+              <button class="card__control card__control--favorites" type="button"><img src="img/icons/favorites.svg" width="33" height="31"></button>
+            </div>
+          </li>
+          <li class="catalog__item card card_wrapper d-flex flex-wrap">
+            <div class="card__image">
+              <img src="img/catalog_pool.png" width="270" height="105" alt="Фото товара">
+            </div>
+            <p class="card__price text">476 000 ₽</p>
+
+            <a class="card__name text text_small" href="pool.html"><h3>Композитный бассейн ROYAL 9037 (с ППУ, цвет голубой)</h3></a>
+            
+            <p class="card__articul text_tiny">Артикул:18485</p>
+
+            <div class="card__controls d-flex justify-content-between align-items-center">
+              <button class="card__control card__control--cart d-flex align-items-center" type="button"><img src="img/icons/cart.svg" width="39" height="31"> <span class="text text_tiny">Заказать</span></button>
+              <button class="card__control card__control--comparison" type="button"><img src="img/icons/comparison.svg" width="23" height="32"></button>
+              <button class="card__control card__control--favorites" type="button"><img src="img/icons/favorites.svg" width="33" height="31"></button>
+            </div>
+          </li>
+          <li class="catalog__item card card_wrapper d-flex flex-wrap">
+            <div class="card__image">
+              <img src="img/catalog_pool.png" width="270" height="105" alt="Фото товара">
+            </div>
+            <p class="card__price text">476 000 ₽</p>
+
+            <a class="card__name text text_small" href="pool.html"><h3>Композитный бассейн ROYAL 9037 (с ППУ, цвет голубой)</h3></a>
+            
+            <p class="card__articul text_tiny">Артикул:18485</p>
+
+            <div class="card__controls d-flex justify-content-between align-items-center">
+              <button class="card__control card__control--cart d-flex align-items-center" type="button"><img src="img/icons/cart.svg" width="39" height="31"> <span class="text text_tiny">Заказать</span></button>
+              <button class="card__control card__control--comparison" type="button"><img src="img/icons/comparison.svg" width="23" height="32"></button>
+              <button class="card__control card__control--favorites" type="button"><img src="img/icons/favorites.svg" width="33" height="31"></button>
+            </div>
+          </li>
+          <li class="catalog__item card card_wrapper d-flex flex-wrap">
+            <div class="card__image">
+              <img src="img/catalog_pool.png" width="270" height="105" alt="Фото товара">
+            </div>
+            <p class="card__price text">476 000 ₽</p>
+
+            <a class="card__name text text_small" href="pool.html"><h3>Композитный бассейн ROYAL 9037 (с ППУ, цвет голубой)</h3></a>
+            
+            <p class="card__articul text_tiny">Артикул:18485</p>
+
+            <div class="card__controls d-flex justify-content-between align-items-center">
+              <button class="card__control card__control--cart d-flex align-items-center" type="button"><img src="img/icons/cart.svg" width="39" height="31"> <span class="text text_tiny">Заказать</span></button>
+              <button class="card__control card__control--comparison" type="button"><img src="img/icons/comparison.svg" width="23" height="32"></button>
+              <button class="card__control card__control--favorites" type="button"><img src="img/icons/favorites.svg" width="33" height="31"></button>
+            </div>
+          </li>
+          <li class="catalog__item card card_wrapper d-flex flex-wrap">
+            <div class="card__image">
+              <img src="img/catalog_pool.png" width="270" height="105" alt="Фото товара">
+            </div>
+            <p class="card__price text">476 000 ₽</p>
+
+            <a class="card__name text text_small" href="pool.html"><h3>Композитный бассейн ROYAL 9037 (с ППУ, цвет голубой)</h3></a>
+            
+            <p class="card__articul text_tiny">Артикул:18485</p>
+
+            <div class="card__controls d-flex justify-content-between align-items-center">
+              <button class="card__control card__control--cart d-flex align-items-center" type="button"><img src="img/icons/cart.svg" width="39" height="31"> <span class="text text_tiny">Заказать</span></button>
+              <button class="card__control card__control--comparison" type="button"><img src="img/icons/comparison.svg" width="23" height="32"></button>
+              <button class="card__control card__control--favorites" type="button"><img src="img/icons/favorites.svg" width="33" height="31"></button>
+            </div>
+          </li>
+        </ul>
+
+        <ul class="catalog__pagination d-none">
+          <li class="catalog__pagination_item">
+            <a class="catalog__page catalog__page--current">1</a>
+          </li>
+          <li class="catalog__pagination_item">
+            <a class="catalog__page catalog__page--current">2</a>
+          </li>
+          <li class="catalog__pagination_item">
+            <a class="catalog__page catalog__page--current">3</a>
+          </li>
+          <li class="catalog__pagination_item">
+            <a class="catalog__page catalog__page--current">4</a>
+          </li>
+        </ul>
+      </div>
+    </dev>
+  </main>
+
+  <footer class="footer d-flex">
+    <p class="footer__copyright text text_small">2021 © AquaVisa</p>
+    <a class="footer__link text text_small" href="">Договор оферты</a>
+    <a class="footer__link text text_small" href="">Политика конфиденциальности</a>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+</body>
+</html>
